@@ -9,7 +9,17 @@ data class Car (val id: Int = 0,
                 val owner: String = "",
                 val latitude : Float = 0f,
                 var longitude : Float = 0f,
-                val kilometers: String = "") : Mapeable {
+                val kilometers: String = "") : Mapeable, Listable {
+
+    // Listable methods
+
+    override fun getTitle(): String {
+        return make
+    }
+
+    override fun getSubtitle(): String {
+        return model + " (" + year.toString() + ")"
+    }
 
     // Mapeable methods
 
@@ -32,9 +42,6 @@ data class Car (val id: Int = 0,
     override fun get_Image(): String {
         return image
     }
-
-    // end mapeable methods
-
 
 }
 

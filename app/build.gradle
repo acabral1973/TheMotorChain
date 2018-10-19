@@ -32,4 +32,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile project(path: ':domain')
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Circle Image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 }
